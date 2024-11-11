@@ -1,2 +1,2 @@
 # What is this project?
-This is a PDF maker.
+This is a Python app that creates a PDF file filled with empty notebook pages. The pages belong to topics. These topics and the amount of pages dedicated to them, can be configured in topics.csv.
