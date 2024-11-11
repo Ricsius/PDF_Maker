@@ -14,4 +14,9 @@ for index, row in data.iterrows():
     pdf.cell(w=0, h=12, txt=row[TOPIC_KEY], align="L", ln=1)
     pdf.line(10, 21, 200, 21)
 
+    remaining_pages = row[PAGES_KEY] - 1
+
+    for i in range(remaining_pages):
+        pdf.add_page()
+
 pdf.output("output.pdf")
